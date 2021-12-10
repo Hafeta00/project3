@@ -1,0 +1,60 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-container input {
+    border: 0;
+    border: 2px solid #006bb7;
+    width: 30%;
+    height: 30px;
+    font-size: 14px;
+    background-color: transparent;
+  }
+  
+  *:focus {
+      outline: none;
+  }
+  
+  .teams-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .teams-container img {
+    width: 150px;
+    margin: 10px 6px;
+  }
+  
+  /* Underline From Center */
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #006bb7;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  /** youtube hover logic*/
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }

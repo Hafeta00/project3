@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Bevan|Lato:300,400,400i,700");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+}
+div.content {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.roster-container .team-logo img {
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .roster-container{
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+.players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+.card {
+
+ justify-content: center;
+ flex-direction: row;
+  background: #fff;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  display: flex;
+  height: 100px;
+  position: relative;
+  width: 500px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+}
+.player {
+  display: flex;
+  color: #2c3e50;
+}
+.player > div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.player .pic img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background: #e8eaec;
+}
+
+.player .info {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 4;
+}
+.player .info .name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.player .logo {
+  position: absolute;
+  right: 10px;
+  opacity: 0.15;
+}
+.player .logo img {
+  height: 200px;
+}
+.toolbar {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
