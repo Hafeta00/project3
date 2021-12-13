@@ -6,6 +6,7 @@ import { Albums } from "./Albums";
 import { Tracks } from "./Tracks";
 import { useSelector } from "react-redux";
 import Header from "./header";
+import { Player } from "./Player";
 
 function App() {
   const isWaiting = useSelector((state) => state.isWaiting);
@@ -16,6 +17,7 @@ function App() {
       {isWaiting && <div className="spinner" />}
       <Routes>
         <Route path="/" element={<Artists />} />
+        <Route path="/player/" element={<Player />} />
         <Route path="/roster/:artist" element={<Albums />} />
         
       </Routes>

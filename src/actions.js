@@ -13,6 +13,8 @@ export function loadedAlbums(albums) {
   return {type: Action.LoadedAlbums, payload: albums};
 }
 
+
+
 export function showProgress() {
   return {type: Action.StartedWaiting};
 }
@@ -33,12 +35,12 @@ export function fetchArtists() {
   console.log('fetchArtists')
   return (dispatch) => {
     dispatch(showProgress());
-    fetch(`https://dukebox.twodee.org:8443/artists`)
+    fetch(`https://project2.hafet.me:8443/all`)
       .then(assertResponse)
       .then((response) => response.json())
       .then((data) => {
         
-        dispatch(loadedArtists(data));
+        dispatch(loadedAlbums(data.results));
             dispatch(hideProgress());
       });
   };
