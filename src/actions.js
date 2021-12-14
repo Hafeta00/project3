@@ -57,6 +57,7 @@ export function fetchArtists() {
 export function fetchStanding() {
 
   return (dispatch) => {
+    console.log("ge");
     dispatch(showProgress());
     fetch(`https://project2.hafet.me:8443/standing`)
       .then(assertResponse)
