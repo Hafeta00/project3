@@ -10,6 +10,10 @@ div.content {
   margin: 0 auto;
 }
 
+.team-logo {
+  padding-bottom: 1em;
+}
+
 .roster-container .team-logo img {
   width: 125px;
   display: block;
@@ -40,6 +44,7 @@ div.content {
   background: #fff;
   border-radius: 2px;
   margin-bottom: 20px;
+  margin-left: -12em;
   display: flex;
   height: 100px;
   position: relative;
