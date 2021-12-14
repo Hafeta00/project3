@@ -1,27 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './header.css'
+import "./header.css";
 
 const Header = () => {
-  return(
+  return (
     <header>
-      
-      <Link to="/">
-        <div className="logo-container">
-          <img src={'/images/nba-logo.png'} alt="nba logo"/>
-        </div>
-      </Link>
+      <div className="nav-bar">
+        <Link to="/">
+          <div className="logo-container">
+            <img src={"/images/nba-logo.png"} alt="nba logo" />
+          </div>
+        </Link>
 
-      <Link to='./Player'>
-        <div className="logo-container">
-          <img src={'/images/nba-logo.png'} alt="nba logo"/>
-        </div>
-      </Link>
+        <Link to="./Player">
+          <div className="logo-container">
+            <img src={"/images/nba-logo.png"} alt="nba logo" />
+          </div>
+        </Link>
 
-
+        <Link to="./Standing">
+          <div className="logo-container">
+            <img src={"/images/nba-logo.png"} alt="nba logo" />
+          </div>
+        </Link>
+      </div>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

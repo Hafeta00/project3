@@ -11,17 +11,22 @@ div.content {
 }
 
 .roster-container .team-logo img {
-    width: 125px;
-    display: block;
-    margin: 0 auto;
-  }
+  width: 125px;
+  display: block;
+  margin: auto;
+}
 
-  .roster-container{
-    width: 125px;
-    display: block;
-    margin: 0 auto;
-  }
-  
+.list-of-players {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.roster-container {
+  width: 125px;
+  display: block;
+  margin: 0 auto;
+}
 
 .players {
   display: flex;
@@ -30,9 +35,8 @@ div.content {
   margin-left: 20px;
 }
 .card {
-
- justify-content: center;
- flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
   background: #fff;
   border-radius: 2px;
   margin-bottom: 20px;
@@ -40,12 +44,12 @@ div.content {
   height: 100px;
   position: relative;
   width: 500px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
 }
 .card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   cursor: pointer;
 }
 .player {
@@ -64,7 +68,7 @@ div.content {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   background: #e8eaec;
 }
 
@@ -92,4 +96,3 @@ div.content {
   align-items: center;
   width: 500px;
 }
-

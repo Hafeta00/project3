@@ -11,6 +11,8 @@ const initialState = {
   // These are the tracks of Rivers Arms...
   tracks: [],
 
+  standing:[],
+
   // Add a flag to your Redux store that indicates whether or not the app has a background task in progress
   isWaiting: false,
 };
@@ -32,6 +34,17 @@ const reducer = (state, action) => {
         ...state,
         isWaiting: true,
       };
+
+    case Action.LoadedStanding:
+      return {
+        ...state,
+        standing: action.payload,
+      }
+
+    case Action.RemovePlayer: 
+      return{ ...state,
+      albums: state.albums.filter(album =>  album.id != action.payload),
+    };
     case Action.StoppedWaiting:
       return {
         ...state,
